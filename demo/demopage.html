@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Navbar</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+.navbar{
+    background:#fff;
+    border-bottom:3px solid green;
+    padding:10px 30px;
+}
+
+.navbar-brand img{
+    height:75px;
+}
+
+.navbar-nav{
+    margin:auto;
+}
+
+.navbar-nav .nav-link{
+    color:#555 !important;
+    font-weight:bold;
+    margin:0 12px;
+    font-size:17px;
+}
+
+.navbar-nav .nav-link:hover{
+    color:green !important;
+}
+
+.info-card{
+    background:whitesmoke;
+    border:1px solid whitesmoke;
+    border-radius:5px;
+    padding:40px 20px;
+    min-height:220px;
+    text-align:center;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.info-card:hover{
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.info-card .icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.info-card h4{
+    color:#4b617c;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.info-card p{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.info-card small{
+    font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+
+<a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="E:\Internship\Image\logo.jpg" alt="Logo">
+    <div class="ml-2">
+        <strong>ग्रामपंचायत सरनोबतवाडी</strong><br>
+        <small>ता. सरनोबतवाडी जि. कोल्हापूर</small>
+    </div>
+</a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav">
+
+<li class="nav-item"><a class="nav-link" href="E:\Internship\1st Project\HomePage.html">मुखपृष्ठ</a></li>
+<li class="nav-item"><a class="nav-link" href="E:\Internship\1st Project\aboutUs.html">ग्रामपंचायतीबद्दल</a></li>
+<li class="nav-item"><a class="nav-link" href="E:\Internship\1st Project\service.html">सेवा</a></li>
+<li class="nav-item"><a class="nav-link" href="E:\Internship\1st Project\Yojana.html">योजना</a></li>
+<li class="nav-item"><a class="nav-link" href="#">माझे गाव</a></li>
+<li class="nav-item"><a class="nav-link" href="E:\Internship\1st Project\pai.html">PAI</a></li>
+<li class="nav-item"><a class="nav-link" href="#">गॅलरी</a></li>
+<li class="nav-item"><a class="nav-link" href="#">लेख</a></li>
+<li class="nav-item"><a class="nav-link" href="E:\Internship\1st Project\contact.html">संपर्क</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+<ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+</ul>
+
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="E:\Internship\Image\waterfall_Image.png" style="width:100%;">
+    </div>
+    <div class="carousel-item">
+        <img src="E:\Internship\Image\SampleImage.jpg" style="width:100%;">
+    </div>
+    <div class="carousel-item">
+        <img src="E:\Internship\Image\SampleImage.jpg" style="width:100%;">
+    </div>
+</div>
+
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</a>
+
+</div>
+
+<hr>
+
+<div class="container">
+    <h2 style="color: green">ग्रामपंचायत सरनोबतवाडी</h2>
+    <p>ता. सरनोबतवाडी, जि. कोल्हापूर</p>
+
+    <div class="row align-items-center gy-4">
+
+        <p class="intro-text">
+            या संकेतस्थळावर आपले मनःपूर्वक स्वागत आहे.
+            नागरिकांना ग्रामपंचायतीच्या योजना, सेवा व उपक्रमांची अचूक आणि पारदर्शक माहिती
+            एका ठिकाणी उपलब्ध करून देणे हा या संकेतस्थळाचा मुख्य उद्देश आहे.
+        </p>
+
+        <div class="col-lg-6 gp-content">
+            <ul class="gp-points" style="margin-left:20px;">
+                <li><i class="bi bi-check-circle-fill"></i> ग्रामपंचायतीच्या विविध योजना व उपक्रमांची माहिती</li>
+                <li><i class="bi bi-check-circle-fill"></i> नागरी सुविधा व सेवा ऑनलाईन उपलब्ध</li>
+                <li><i class="bi bi-check-circle-fill"></i> पारदर्शक, जबाबदार व लोकाभिमुख प्रशासन</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-6 gp-content">
+            <p>
+                ग्रामविकासासाठी नागरिकांचा सहभाग अत्यंत महत्त्वाचा आहे.
+                स्वच्छता, पाणीपुरवठा, रस्ते, शिक्षण, आरोग्य व डिजिटल सेवा
+                यामध्ये सातत्याने सुधारणा करणे हे ग्रामपंचायतीचे ध्येय आहे.
+            </p>
+
+          
+        </div>
+
+    </div>
+</div>
+
+<!-- Info Section -->
+<h2 style="color: green; text-align:center; margin-top:40px;">गावाची माहिती</h2>
+
+<div class="container mt-4 mb-4">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="info-card">
+                <div class="icon">🗺️</div>
+                <h4>एकूण क्षेत्रफळ</h4>
+                <p>0.43 चौ. कि.मी.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="info-card">
+                <div class="icon">👨‍👩‍👧‍👦</div>
+                <h4>लोकसंख्या</h4>
+                <p>4271</p>
+                <small>(पुरुष - 2239 , महिला - 2032)</small>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="info-card">
+                <div class="icon">🔖</div>
+                <h4>LGD कोड</h4>
+                <p>567416</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<h2 style="color: green; text-align:center;">सेवा</h2>
+    <div class="container1 mt-4 mb-4">
+        <div class="info-card">
+            <div class="icon"></div>
+            <h4>जन्म प्रमाणपत्र</h4>
+            <p>गावाच्या हद्दीत जन्म झाला असल्यास २१ दिवसांच्या आत जन्म नोंदणी केली जाते व जन्म प्रमाणपत्र प्रदान केले जाते.</p>
+        </div>
+    </div>
+    <div class="container1 mt-4 mb-4">
+        <div class="info-card">
+            <div class="icon"></div>
+            <h4>मृत्यू प्रमाणपत्र</h4>
+            <p>गावाच्या हद्दीत मृत्यू झाल्यास २१ दिवसांच्या आत मृत्यू नोंदणी केली जाते व मृत्यू प्रमाणपत्र दिले जाते.</p>
+        </div>
+    </div>
+    <div class="container1 mt-4 mb-4">
+        <div class="info-card">
+            <div class="icon"></div>
+            <h4>विवाह नोंदणी</h4>
+            <p>विवाह नोंदणी अधिनियम 1998 नुसार विवाह नोंदणीची सेवा ग्रामपंचायतीमार्फत पुरविण्यात येते.</p>
+        </div>
+    </div>
+    <div class="container1 mt-4 mb-4">
+        <div class="info-card">
+            <div class="icon"></div>
+            <h4>थकबाकी नसल्याचे प्रमाणपत्र</h4>
+            <p>ग्रामपंचायत करांची कोणतीही थकबाकी नसल्यास थकबाकी नसल्याचे प्रमाणपत्र दिले जाते.</p>
+        </div>
+    </div>
+    <h2 style="color:green"><center>पदाधिकारी व कर्मचारी</center></h2>
+   <style>
+.members-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.member-card{
+    width:270px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:25px 20px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.member-img{
+    width:150px;
+    height:150px;
+    margin:0 auto 15px;
+    border:2px solid #0066ff;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.member-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.member-name{
+    font-size:32px;
+    color:#4a4a4a;
+    margin:10px 0 5px;
+}
+
+.member-designation{
+    color:#0056ff;
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.member-info p{
+    margin:10px 0;
+    font-size:22px;
+    color:#e53935;
+    word-break:break-word;
+}
+
+.icon{
+    color:green;
+    margin-right:8px;
+}
+</style>
+
+<div class="members-wrapper">
+
+    <div class="member-card">
+        <div class="member-img">
+            <img src="image1.jpg" alt="">
+        </div>
+
+        <h3 class="member-name">सौ. सुवर्णा महादेव माळी</h3>
+        <p class="member-designation">सरपंच</p>
+
+        <div class="member-info">
+            <p><span class="icon">📞</span>9921114234</p>
+            <p><span class="icon">✉️</span>savitabhatale9930@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="member-card">
+        <div class="member-img">
+            <img src="image2.jpg" alt="">
+        </div>
+
+        <h3 class="member-name">श्री. सदाशिव दादू अडसूळ</h3>
+        <p class="member-designation">उपसरपंच</p>
+
+        <div class="member-info">
+            <p><span class="icon">📞</span>9823786609</p>
+            <p><span class="icon">✉️</span>07radha.radhanagari@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="member-card">
+        <div class="member-img">
+            <img src="image3.jpg" alt="">
+        </div>
+
+        <h3 class="member-name">?</h3>
+        <p class="member-designation">ग्रामपंचायत अधिकारी</p>
+
+        <div class="member-info">
+            <p><span class="icon">📞</span>?</p>
+            <p><span class="icon">✉️</span>?</p>
+        </div>
+    </div>
+
+</div>
+   <h2 style="color: green; margin-top: 40px; margin-bottom: 10px; text-align: center;">
+    विकासकामे</h2>
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>विकासकामे</title>
+
+    <!-- Bootstrap -->
+    <link href="" rel="stylesheet">
+
+    <style>
+        .gp-work-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .gp-work-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .gp-work-details {
+            padding: 15px;
+        }
+
+        .gp-work-details p {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .gp-work-details strong {
+            font-weight: bold;
+        }
+
+        h2 {
+            color: green;
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="gp-work-card">
+                <img src="image1.jpg" class="gp-work-img">
+                <div class="gp-work-details">
+                    <p><strong>कामाचे नाव:</strong> सर्व अंगणवाडी साठी बेंच खरेदी करणे</p>
+                    <p><strong>वर्ष:</strong> 2025</p>
+                    <p><strong>ठिकाण:</strong>सरनोबतवाडी</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="gp-work-card">
+                <img src="image2.jpg" class="gp-work-img">
+                <div class="gp-work-details">
+                    <p><strong>कामाचे नाव:</strong> गावाला पाणीपुरवठा</p>
+                    <p><strong>वर्ष:</strong> 2025</p>
+                    <p><strong>ठिकाण:</strong>सरनोबतवाडी</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="gp-work-card">
+                <img src="image3.jpg" class="gp-work-img">
+                <div class="gp-work-details">
+                    <p><strong>कामाचे नाव:</strong> एल.ई.डी./दिव्याची सोय करणे</p>
+                    <p><strong>वर्ष:</strong> 2025</p>
+                    <p><strong>ठिकाण:</strong>सरनोबतवाडी</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="gp-work-card">
+                <img src="image4.jpg" class="gp-work-img">
+                <div class="gp-work-details">
+                    <p><strong>कामाचे नाव:</strong> पिण्याच्या पाण्याच्या नवीन स्रोताची निर्मिती</p>
+                    <p><strong>वर्ष:</strong> 2025</p>
+                    <p><strong>ठिकाण:</strong>सरनोबतवाडी</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="gp-work-card">
+                <img src="image5.jpg" class="gp-work-img">
+                <div class="gp-work-details">
+                    <p><strong>कामाचे नाव:</strong> ड्रेनेज बांधकाम</p>
+                    <p><strong>वर्ष:</strong> 2025</p>
+                    <p><strong>ठिकाण:</strong>सरनोबतवाडी</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="gp-work-card">
+                <img src="image6.jpg" class="gp-work-img">
+                <div class="gp-work-details">
+                    <p><strong>कामाचे नाव:</strong> स्वच्छता सामान खरेदी</p>
+                    <p><strong>वर्ष:</strong> 2025</p>
+                    <p><strong>ठिकाण:</strong>सरनोबतवाडी</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+ <!--Footer-->
+    <footer style="background:#3f4b5f; color:white; padding:60px 0 20px 0; margin-top:50px;">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo Section -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img src="E:\Internship\Image\logo.jpg"
+                     alt="Logo"
+                     style="max-width:280px; background:white; padding:10px; border-radius:10px;">
+            </div>
+
+            <!-- Important Links -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 style="font-weight:bold; margin-bottom:20px;">महत्वाचे संकेतस्थळे</h4>
+
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 महाराष्ट्र शासन</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 माझी ग्रामपंचायत</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 ग्रामविकास विभाग</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 ई-ग्रामस्वराज</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 शासन निर्णय</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 MGNREGA</a></p>
+            </div>
+
+            <!-- Menu Links -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 style="font-weight:bold; margin-bottom:20px;">लिंक्स</h4>
+
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 मुखपृष्ठ</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 विकासकामे</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 योजना</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 नोटीस बोर्ड</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 माझे गाव</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 गॅलरी</a></p>
+                <p><a href="#" style="color:#fff;text-decoration:none;">🔗 संपर्क</a></p>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h4 style="font-weight:bold; margin-bottom:20px;">संपर्क</h4>
+
+                <p>
+                    ग्रामपंचायत कार्यालय,<br>
+                    सरनोबतवाडी, ता.सरनोबतवाडी,<br>
+                    जि. कोल्हापूर 416234
+                </p>
+
+                <p><strong>संपर्क क्र. :</strong> 8605906007</p>
+                <p><strong>ई-मेल:</strong> 07radha.radhanagari@gmail.com</p>
+            </div>
+
+        </div>
+
+        <hr style="border-color:rgba(255,255,255,0.2);">
+
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p style="margin:0;">
+                    © Copyright <strong>ग्रामपंचायत सरनोबतवाडी</strong> |
+                    All Rights Reserved
+                </p>
+            </div>
+
+            <div class="col-md-6 text-center text-md-end">
+                <p style="margin:0;">
+                    Designed by
+                    <a href="#" style="color:white;">
+                        Revolution IT Solutions
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top -->
+    <a href="#"
+       style="position:fixed;
+              bottom:20px;
+              right:20px;
+              background:#d35400;
+              color:white;
+              width:50px;
+              height:50px;
+              text-align:center;
+              line-height:50px;
+              font-size:25px;
+              border-radius:6px;
+              text-decoration:none;">
+        ↑
+    </a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="" alt="Logo">
+
+        <div class="ml-2">
+            <strong>ग्रामपंचायत सरनोबतवाडी</strong><br>
+            <small>ता. करवीर जि. कोल्हापूर</small>
+        </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item"><a class="nav-link" href="HomePage.html">मुखपृष्ठ</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutUs.html">ग्रामपंचायतीबद्दल</a></li>
+            <li class="nav-item"><a class="nav-link" href="service.html">सेवा</a></li>
+            <li class="nav-item"><a class="nav-link" href="Yojana.html">योजना</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">माझे गाव</a></li>
+            <li class="nav-item"><a class="nav-link" href="pai.html">PAI</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">गॅलरी</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">लेख</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">संपर्क</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- PAI Section -->
+<div class="container text-center mt-4 mb-5">
+
+    <h2 class="text-primary">PAI अहवाल</h2>
+
+    <p class="mb-4">
+        ग्रामपंचायत कार्यप्रदर्शन मूल्यांकन (PAI) अहवाल
+    </p>
+
+    <img src="E:\Internship\Image\PAI Report.jpg.png" alt="E:\Internship\Image\PAI Sarnobatwadi.pdf" class="pai-image img-fluid">
+
+    <br><br>
+
+    <a href="PDF/PAI_Report.pdf" target="_blank" class="btn btn-success btn-lg">
+        PAI अहवाल डाउनलोड करा
+    </a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+</html>

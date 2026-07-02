@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">PhoneBook</div>
+
+        <div class="search-section">
+            <input type="search" id="searchTxt" class="search-box" placeholder="Search Contact">
+        </div>
+    </nav>
+
+    <h2>Add New Contact</h2>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="uname">Name</label>
+            <input type="text" id="uname" placeholder="Enter Name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" placeholder="Enter Contact Number" required />
+        </div>
+
+        <button class="btn-add">Add Contact</button>
+    </form>
+
+    <div>
+
+        <h2>All Contacts</h2>
+
+        <div id="phonebook">
+            Nothing to show! Use "Add a contact" section above to add contact.
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

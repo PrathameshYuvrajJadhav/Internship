@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+    <button onclick="ShowMsg()">Show Message</button>
+    <button id="btnTest">Show Message 1</button>
+    <script>
+
+function ShowMsg()
+{
+    alert("Hello Students..!");
+}
+
+document.getElementById("btnTest").addEventListener("click",ShowMsg);
+
+let p = document.getElementById("test");
+p.innerHTML="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt voluptatibus voluptatem. Officia architecto possimus, deleniti aut magni sunt omnis ea atque, voluptatibus autem placeat illum cumque! Omnis, iusto voluptate!";
+p.style.color="red";
+
+// Store
+localStorage.setItem("Company", "Revolution IT Solutions");
+// Retrieve
+let company = localStorage.getItem("Company");
+console.log(company);
+//check log in browser for output
+
+// Create object:
+let student = { rollno: 71, standard: 10 };
+localStorage.setItem("key", JSON.stringify(student));
+// Read Object:
+let item = JSON.parse(localStorage.getItem("key"));
+console.log(item);
+//check log in browser for output
+    </script>
+</body>
+</html>
