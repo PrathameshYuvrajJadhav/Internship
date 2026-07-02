@@ -82,8 +82,8 @@ h2{
 }
 #phonebook{
     display:flex;
-    margin-left:50px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    gap: 10pxpx;
+    margin:20px 50px;
 }
 .btn-delete{
     background:#007bff ;
@@ -92,6 +92,7 @@ h2{
     padding:12px 20px;
     border-radius:4px;
     cursor:pointer;
+    width:150px;
 }
 
 .btn-delete:hover{

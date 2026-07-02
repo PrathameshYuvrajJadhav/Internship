@@ -36,19 +36,19 @@ function showInfo() {
 
   info.forEach(function (student, index) {
     output += `
-        <div class="card">
+    <div class="card">
 
-            <h3>${student.name}</h3>
+        <h3>${student.name}</h3>
 
-            <p>${student.domain}</p>
+        <p>${student.domain}</p>
 
-            <button class="btn-delete"
-             onclick="deleteContact(${index})">
-            Delete Contact
-            </button>
+        <button class="btn-delete"
+         onclick="deleteContact(${index})">
+        Delete Info
+        </button>
 
-        </div>
-        `;
+    </div>
+    `;
   });
 
   let phonebook = document.getElementById("phonebook");
