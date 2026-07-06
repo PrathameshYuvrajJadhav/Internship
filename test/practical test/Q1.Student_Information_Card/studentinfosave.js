@@ -1,25 +1,24 @@
 let info = [];
 
-// Load contacts from localStorage
+// Load data from localStorage
 if (localStorage.getItem("info") != null) {
-  info = JSON.parse(localStorage.getItem("info"));
+    info = JSON.parse(localStorage.getItem("info"));
 }
 
-// Show contacts when page loads
+// Show data on page load
 showInfo();
 
 // Form Submit Event
-document.querySelector(".info-form").addEventListener("submit", function (e) 
-{
+document.querySelector(".info-form").addEventListener("submit", function (e) {
+
     e.preventDefault();
 
     let name = document.getElementById("uname").value;
-
-    let domain = document.getElementById("course").value;
+    let course = document.getElementById("course").value;
 
     info.push({
-      name: name,
-      domain: domain,
+        name: name,
+        course: course
     });
 
     localStorage.setItem("info", JSON.stringify(info));
@@ -32,40 +31,43 @@ document.querySelector(".info-form").addEventListener("submit", function (e)
 
 // Display Info
 function showInfo() {
-  let output = "";
 
-  info.forEach(function (student, index) {
-    output += `
-    <div class="card">
+    let output = "";
 
-        <h3>${student.name}</h3>
+    info.forEach(function (student, index) {
 
-        <p>${student.domain}</p>
+        output += `
+        <div class="card">
+            <h3>${student.name}</h3>
+            <p>Course: ${student.course}</p>
 
-        <button class="btn-delete"
-         onclick="deleteContact(${index})">
-        Delete Info
-        </button>
+            <button class="btn-delete"
+                    onclick="deleteInfo(${index})">
+                Delete
+            </button>
+        </div>
+        `;
+    });
 
-    </div>
-    `;
-  });
+    let phonebook = document.getElementById("phonebook");
 
-  let phonebook = document.getElementById("phonebook");
+    if (info.length === 0) {
 
-  if (info.length === 0) {
-    phonebook.innerHTML =
-      'Nothing to show! Use "Add a contact" section above to add contact.';
-  } else {
-    phonebook.innerHTML = output;
-  }
+        phonebook.innerHTML =
+        'Nothing to show! Use "Add Info" section above to add student information.';
+
+    } else {
+
+        phonebook.innerHTML = output;
+    }
 }
 
-// Delete Contact
-function deleteContact(index) {
-  info.splice(index, 1);
+// Delete Info
+function deleteInfo(index) {
 
-  localStorage.setItem("info", JSON.stringify(info));
+    info.splice(index, 1);
 
-  showInfo();
+    localStorage.setItem("info", JSON.stringify(info));
+
+    showInfo();
 }

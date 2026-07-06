@@ -1,6 +1,19 @@
-/* =========================
-   CONTACT FORM
-========================= */
+body{
+    background:linear-gradient(135deg,#0a0a0c,#4D8AF0);
+    min-height:100vh;
+}
+
+.navbar{
+    width:100%;
+    background:#1E1E2F;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+/*CONTACT FORM */
 
 .info-form{
     width:90%;
@@ -12,8 +25,8 @@
     box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
-h2{
-    color:#212529;
+h1{
+    color:white;
     margin-bottom:20px;
     margin-left:50px;
 }
@@ -84,6 +97,7 @@ h2{
     display:flex;
     gap: 10pxpx;
     margin:20px 50px;
+    color:white
 }
 .btn-delete{
     background:#007bff ;
