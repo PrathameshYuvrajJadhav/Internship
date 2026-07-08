@@ -9,7 +9,7 @@ if (localStorage.getItem("tasks") != null) {
 showTasks();
 
 // Add Task Event
-document.getElementById("addTask Btn").addEventListener("click", function () {
+document.getElementById("addTaskBtn").addEventListener("click", function () {
 
     let task = document.getElementById("taskInput").value;
 
