@@ -1,0 +1,25 @@
+﻿@model List<Assignment_3__ASP.NET_Core_MVC_Task_1.Models.ServiceModel>
+
+@{
+    ViewData["Title"] = "Services";
+}
+
+<section class="page">
+
+    <h1 class="page-title">Our Services</h1>
+
+    <div class="divider"></div>
+
+    <ul class="services">
+
+        @foreach (var item in Model)
+        {
+            <li>
+                <strong>@item.Title</strong><br />
+                @item.Description
+            </li>
+        }
+
+    </ul>
+
+</section>  

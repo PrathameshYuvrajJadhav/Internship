@@ -1,0 +1,49 @@
+﻿@model EMP.Entities.Branch
+
+@{
+    ViewData["Title"] = "Create Branch";
+}
+
+<div class="container mt-4">
+
+    <h2>Create Branch</h2>
+
+    <form asp-action="CreateBranch" method="post">
+
+        <div class="mb-3">
+            <label asp-for="BranchName" class="form-label">
+                Branch Name
+            </label>
+
+            <input asp-for="BranchName"
+                   class="form-control" />
+
+            <span asp-validation-for="BranchName"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Location" class="form-label">
+                Location
+            </label>
+
+            <input asp-for="Location"
+                   class="form-control" />
+
+            <span asp-validation-for="Location"
+                  class="text-danger"></span>
+        </div>
+
+        <button type="submit"
+                class="btn btn-success">
+            Save
+        </button>
+
+        <a asp-action="Branches"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>

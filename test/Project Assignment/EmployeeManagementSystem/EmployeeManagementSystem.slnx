@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="EMP.Entities/EMP.Entities.csproj" />
+  <Project Path="EMP.Repositories/EMP.Repositories.csproj" />
+  <Project Path="EMP.UI/EMP.UI.csproj" />
+</Solution>

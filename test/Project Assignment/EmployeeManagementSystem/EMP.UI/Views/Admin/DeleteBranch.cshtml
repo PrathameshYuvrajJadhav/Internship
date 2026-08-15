@@ -1,0 +1,53 @@
+﻿@model EMP.Entities.Branch
+
+@{
+    ViewData["Title"] = "Delete Branch";
+}
+
+<div class="container mt-4">
+
+    <h2>Delete Branch</h2>
+
+    <div class="alert alert-danger">
+        Are you sure you want to delete this branch?
+    </div>
+
+    <dl class="row">
+
+        <dt class="col-sm-3">
+            Branch Name
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.BranchName
+        </dd>
+
+        <dt class="col-sm-3">
+            Location
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.Location
+        </dd>
+
+    </dl>
+
+    <form asp-action="DeleteBranch"
+          method="post">
+
+        <input type="hidden"
+               asp-for="BranchId" />
+
+        <button type="submit"
+                class="btn btn-danger">
+            Yes, Delete
+        </button>
+
+        <a asp-action="Branches"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>

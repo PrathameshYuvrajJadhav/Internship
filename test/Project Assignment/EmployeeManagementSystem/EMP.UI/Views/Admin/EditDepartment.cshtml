@@ -1,0 +1,63 @@
+﻿@model EMP.Entities.Department
+
+@{
+    ViewData["Title"] = "Edit Department";
+}
+
+<div class="container mt-4">
+
+    <h2>Edit Department</h2>
+
+    <form asp-action="EditDepartment" method="post">
+
+        <input type="hidden"
+               asp-for="DepartmentId" />
+
+        <div class="mb-3">
+
+            <label asp-for="DepartmentName"
+                   class="form-label">
+                Department Name
+            </label>
+
+            <input asp-for="DepartmentName"
+                   class="form-control" />
+
+            <span asp-validation-for="DepartmentName"
+                  class="text-danger"></span>
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Branch
+            </label>
+
+            <select asp-for="BranchId"
+                    class="form-select">
+
+                @foreach (var branch in ViewBag.Branches)
+                {
+                    <option value="@branch.BranchId">
+                        @branch.BranchName
+                    </option>
+                }
+
+            </select>
+
+        </div>
+
+        <button type="submit"
+                class="btn btn-success">
+            Update
+        </button>
+
+        <a asp-action="Departments"
+           class="btn btn-secondary">
+            Cancel
+        </a>
+
+    </form>
+
+</div>

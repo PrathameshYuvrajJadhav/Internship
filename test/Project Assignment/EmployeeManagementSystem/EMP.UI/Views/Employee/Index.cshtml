@@ -1,0 +1,114 @@
+﻿@{
+    Layout = "_EmployeeLayout";
+    ViewData["Title"] = "Employee Home";
+}
+
+<div class="container">
+
+    <div class="text-center mb-5">
+
+        <h1 class="display-5">
+            Employee Dashboard
+        </h1>
+
+        <p class="lead">
+            Welcome to the Employee Management System
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">
+                        My Profile
+                    </h4>
+
+                    <p class="card-text">
+                        View and update your personal
+                        and professional information.
+                    </p>
+
+                    <a asp-controller="Employee"
+                       asp-action="Profile"
+                       class="btn btn-primary">
+
+                        View Profile
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">
+                        Apply Leave
+                    </h4>
+
+                    <p class="card-text">
+                        Submit a new leave application
+                        to the administrator.
+                    </p>
+
+                    <a asp-controller="Employee"
+                       asp-action="ApplyLeave"
+                       class="btn btn-success">
+
+                        Apply Leave
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">
+                        My Leaves
+                    </h4>
+
+                    <p class="card-text">
+                        View your submitted leave
+                        applications and their status.
+                    </p>
+
+                    <a asp-controller="Employee"
+                       asp-action="MyLeaves"
+                       class="btn btn-warning">
+
+                        View Leaves
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

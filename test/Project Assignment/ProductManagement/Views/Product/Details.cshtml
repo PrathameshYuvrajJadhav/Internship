@@ -1,0 +1,66 @@
+﻿@model ProductManagement.Models.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="container mt-4">
+
+    <h2>Product Details</h2>
+
+    <dl class="row mt-4">
+
+        <dt class="col-sm-3">
+            Product ID
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.ProductId
+        </dd>
+
+        <dt class="col-sm-3">
+            Product Name
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.ProductName
+        </dd>
+
+        <dt class="col-sm-3">
+            Category
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.Category
+        </dd>
+
+        <dt class="col-sm-3">
+            Price
+        </dt>
+
+        <dd class="col-sm-9">
+            ₹ @Model.Price
+        </dd>
+
+        <dt class="col-sm-3">
+            Stock Quantity
+        </dt>
+
+        <dd class="col-sm-9">
+            @Model.StockQuantity
+        </dd>
+
+    </dl>
+
+    <a asp-action="Edit"
+       asp-route-id="@Model.ProductId"
+       class="btn btn-warning">
+        Edit
+    </a>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</div>
